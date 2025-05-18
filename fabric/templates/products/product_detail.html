@@ -1,0 +1,30 @@
+{# ... існуючий код показу продукту ... #}
+{% extends 'JustDjango/templates/app/base.html' %}
+<hr>
+<section id="product-feedback">
+    <h2>Відгуки користувачів</h2>
+
+    {# Перелік існуючих #}
+    {% if feedback_list %}
+    <ul class="feedback-list">
+        {% for f in feedback_list %}
+        <li>
+            <strong>[{{ f.get_status_display }}] {{ f.user.username|default:"Анонім" }}</strong>
+            — {{ f.rating }}/5<br>
+            {{ f.comment|linebreaks }}<br>
+            <small>Опубліковано: {{ f.created_at|date:"d.m.Y H:i" }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Немає відгуків для цього продукту.</p>
+    {% endif %}
+
+    {# Форма додавання нового відгуку #}
+    <h3>Залишити свій відгук</h3>
+    <form method="post" action=".">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Надіслати відгук</button>
+    </form>
+</section>

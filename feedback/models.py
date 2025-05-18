@@ -7,10 +7,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Feedback(models.Model):
-    """
-    Модель відгуків користувачів для продуктів або загальна.
-    Розміщується у окремому Django-приложенні "feedback".
-    """
+
     STATUS_CHOICES = [
         ('new', _('Новий')),
         ('in_progress', _('В обробці')),

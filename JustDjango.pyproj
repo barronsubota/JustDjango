@@ -33,6 +33,24 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="fabric\admin.py" />
+    <Compile Include="fabric\apps.py" />
+    <Compile Include="fabric\migrations\0001_initial.py" />
+    <Compile Include="fabric\migrations\__init__.py" />
+    <Compile Include="fabric\models.py" />
+    <Compile Include="fabric\tests.py" />
+    <Compile Include="fabric\urls.py" />
+    <Compile Include="fabric\views.py" />
+    <Compile Include="fabric\__init__.py" />
+    <Compile Include="feedback\admin.py" />
+    <Compile Include="feedback\apps.py" />
+    <Compile Include="feedback\forms.py" />
+    <Compile Include="feedback\migrations\0001_initial.py" />
+    <Compile Include="feedback\migrations\__init__.py" />
+    <Compile Include="feedback\models.py" />
+    <Compile Include="feedback\tests.py" />
+    <Compile Include="feedback\views.py" />
+    <Compile Include="feedback\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="JustDjango\__init__.py" />
     <Compile Include="JustDjango\settings.py" />
@@ -40,10 +58,38 @@
     <Compile Include="JustDjango\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fabric\migrations\__pycache__\0001_initial.cpython-311.pyc" />
+    <Content Include="fabric\migrations\__pycache__\__init__.cpython-311.pyc" />
+    <Content Include="fabric\templates\products\product_detail.html" />
+    <Content Include="fabric\templates\products\product_list.html" />
+    <Content Include="fabric\__pycache__\admin.cpython-311.pyc" />
+    <Content Include="fabric\__pycache__\apps.cpython-311.pyc" />
+    <Content Include="fabric\__pycache__\models.cpython-311.pyc" />
+    <Content Include="fabric\__pycache__\__init__.cpython-311.pyc" />
+    <Content Include="feedback\migrations\__pycache__\0001_initial.cpython-311.pyc" />
+    <Content Include="feedback\migrations\__pycache__\__init__.cpython-311.pyc" />
+    <Content Include="feedback\__pycache__\admin.cpython-311.pyc" />
+    <Content Include="feedback\__pycache__\apps.cpython-311.pyc" />
+    <Content Include="feedback\__pycache__\models.cpython-311.pyc" />
+    <Content Include="feedback\__pycache__\__init__.cpython-311.pyc" />
+    <Content Include="JustDjango\templates\app\404.html" />
+    <Content Include="JustDjango\templates\app\base.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="fabric\" />
+    <Folder Include="fabric\migrations\" />
+    <Folder Include="fabric\migrations\__pycache__\" />
+    <Folder Include="fabric\templates\" />
+    <Folder Include="fabric\templates\products\" />
+    <Folder Include="fabric\__pycache__\" />
+    <Folder Include="feedback\" />
+    <Folder Include="feedback\migrations\" />
+    <Folder Include="feedback\migrations\__pycache__\" />
+    <Folder Include="feedback\__pycache__\" />
     <Folder Include="JustDjango\" />
+    <Folder Include="JustDjango\templates\" />
+    <Folder Include="JustDjango\templates\app\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="just-env\">
